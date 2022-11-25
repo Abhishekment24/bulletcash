@@ -38,9 +38,18 @@
     align-items: center;
   }
 
-  .logo {
-    height: 40px;
-
+  .logo-header {
+    font-weight: 700;
+    background: -webkit-linear-gradient(#24d39a, #459945);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    .logo-title {
+      font-size: 2.25rem;
+      line-height: 2.25rem;
+      font-weight: bold;
+      color: rgb(16 185 129);
+      font-family: Poppins, sans-serif !important;
+    }
     @media print {
       path {
         fill: #000;
@@ -52,7 +61,7 @@
     @include tablet {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: left;
     }
   }
 
@@ -60,6 +69,12 @@
     &.has-tag {
       display: flex;
       align-items: center;
+      line-height: 2.25rem !important;
+      font-weight: bold !important;
+      color: rgb(16 185 129) !important;
+      background: -webkit-linear-gradient(#24d39a, #459945);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     &--tag {
@@ -106,9 +121,9 @@
         margin-right: 0;
       }
 
-      span:not(.icon) {
+      /* span:not(.icon) {
         display: none;
-      }
+      }*/
     }
   }
 
